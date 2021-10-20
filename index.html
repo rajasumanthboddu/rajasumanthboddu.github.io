@@ -1,1 +1,80 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+
+    <!-- Title Page-->
+    <title>Find Intent</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-13 p-b-10 font-poppins">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">How would you chat with help desk support agent in the given context</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Your Utterance</label>
+                                    <input id='input' class="input--style-4" type="text" name="first_name">
+                                </div>
+                                <div class="p-t-15">
+                                    <button id="Find" class="btn1 btn1--radius-2 btn1--green" type="submit">Find</button>
+                                </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Intent Found</label>
+                                    <input class="input--style-4" type="text" name="first_name">
+                                </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Whether Intent found matched your intention</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="p-t-30">
+                            <button id="Submit" class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="js/a.js"></script>
+    
+
+</body>
+
+</html>
