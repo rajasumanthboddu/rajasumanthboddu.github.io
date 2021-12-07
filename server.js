@@ -8,7 +8,6 @@ var assignes = ["Sraavya","Suchitha","Spurthi","Vineeth","Sumanth","Spandana"];
 var task;
 var assigne;
 
-
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -46,6 +45,6 @@ app.post("/", function(request, response){
 	} 
 })
 
-app.listen("https://rajasumanthboddu.github.io/", function(){
+app.listen(3000, function(){
     // console.log("server started on port 3000")
 });
