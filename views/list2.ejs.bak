@@ -34,6 +34,9 @@
                                     <input class="input--style-4" type="text" value="<%= inputUtterance %>" placeholder="Type the task you want to assign here" name="utterance">
                                 </div>
                         </div>
+						<div class="popup">
+						  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+						</div>
                         <div class="input-group">
                             <br>
                             <div class="rs-select2 js-select-simple select--no-search">
@@ -55,7 +58,7 @@
                         </div>
                     </form>
 					<div class="p-t-30">
-                            <button class="btn btn--radius-2 btn--green" name="butt2">View Notes</button>
+                            <button class="btn btn--radius-2 btn--green" type="submit">View Notes</button>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-4" type="text" value="<%= inputUtterance %>" placeholder="Type the task you want to assign here" name="utterance">
+                                    <input class="input--style-4" type="text" selected="selected" placeholder="Type the task you want to assign here" name="utterance">
                                 </div>
                         </div>
                         <div class="input-group">
@@ -55,7 +55,7 @@
                         </div>
                     </form>
 					<div class="p-t-30">
-                            <button class="btn btn--radius-2 btn--green" name="butt2">View Notes</button>
+                            <button class="btn btn--radius-2 btn--green" type="submit">View Notes</button>
                     </div>
                 </div>
             </div>
